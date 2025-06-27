@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Proyectos</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="game-header">
+    <div class="header-controls">
+      <button class="back-btn" onclick="window.location.href='../home/indexEs.html'">← BACK</button>
+      <h1 class="page-title">Arsenal de Proyectos</h1>
+      <div class="level-indicator">10+ PROJ</div>
+    </div>
+  </header>
+
+  <main class="game-panel with-nav-left">
+    
+    <!-- Panel izquierdo - Filtros y estadísticas -->
+    <section class="filters-panel">
+      <div class="panel-header">
+        <h3>🎯 FILTROS DE MISIÓN</h3>
+      </div>
+      
+      <div class="filters-container">
+        <div class="filter-group">
+          <h4>⚡ TECNOLOGÍAS</h4>
+          <div class="tech-filters">
+            <span class="tech-tag" data-tech="typescript">TypeScript</span>
+            <span class="tech-tag" data-tech="react">React</span>
+            <span class="tech-tag" data-tech="javascript">JavaScript</span>
+            <span class="tech-tag" data-tech="python">Python</span>
+            <span class="tech-tag" data-tech="html">HTML</span>
+            <span class="tech-tag" data-tech="css">CSS</span>
+            <span class="tech-tag" data-tech="unity">Unity</span>
+            <span class="tech-tag" data-tech="googleapps">Google Apps</span>
+          </div>
+        </div>
+
+        <div class="stats-summary">
+          <h4>📊 ESTADÍSTICAS</h4>
+          <div class="stat-item">
+            <span class="stat-label">Total Proyectos:</span>
+            <span class="stat-value">10+</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Completados:</span>
+            <span class="stat-value">12</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">En Desarrollo:</span>
+            <span class="stat-value">3</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Líneas de Código:</span>
+            <span class="stat-value">50K+</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel central - Grid de proyectos -->
+    <section class="projects-panel">
+      <div class="panel-header">
+        <h3>🚀 PROYECTOS DESTACADOS</h3>
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="grid">🎮 Grid</button>
+          <button class="view-btn" data-view="list">📋 Lista</button>
+        </div>
+      </div>
+      
+      <div class="projects-container">
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Proyecto 1 -->
+          <div class="project-card" data-category="web" data-tech="typescript css">
+            <div class="project-image">
+              <img src="../../assets/images/cafecito.png" alt="Cafecito" class="project-image">
+              <div class="placeholder-image">Cafecito</div>
+              <div class="project-status completed">COMPLETADO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://cafecito-five.vercel.app" class="action-btn primary">👁️ Ver Demo</a>
+                  <a href="https://github.com/marcela981/Cafecito" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Cafecito E-commerce</h5>
+              <p class="project-description">E-commerce para venta de café en grano. Incluye sección principal tipo hero, catálogo de productos, carrito de compras con checkout y dashboard para administradores. Desarrollado en TypeScript, 100% frontend, sin backend.</p>
+              <div class="project-tech">
+                <span class="tech-badge typescript">TypeScript</span>
+                <span class="tech-badge css">CSS</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 mes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="project-card" data-category="web" data-tech="react javascript">
+            <div class="project-image">
+              <img src="../../assets/images/VentyLab-Web.png" alt="VentyLab Web" class="project-image">
+              <div class="placeholder-image">VentyLab Web</div>
+              <div class="project-status completed">En Progreso</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://ventilab-web.vercel.app" class="action-btn primary">👁️ Ver Demo</a>
+                  <a href="https://github.com/marcela981/ventilab-web" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">VentyLab Web</h5>
+              <p class="project-description">Simulador de monitor de ventilador respiratorio con simulación de pacientes, monitoreo, gráficas y conexión. Los parámetros funcionan con cálculos reales. Desarrollado con React y JavaScript.</p>
+              <div class="project-tech">
+                <span class="tech-badge react">React</span>
+                <span class="tech-badge javascript">JavaScript</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 mes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="project-card" data-category="web" data-tech="react javascript googleapps">
+            <div class="project-image">
+              <img src="../../assets/images/EquivalenciasUnivalle.png" alt="Equivalencias Univalle" class="project-image">
+              <div class="placeholder-image">equivalencias univalle</div>
+              <div class="project-status completed">COMPLETADO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://equivalencias-univalle.vercel.app" class="action-btn primary">👁️ Ver Demo</a>
+                  <a href="https://github.com/marcela981/equivalencias-univalle" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Equivalencias Univalle</h5>
+              <p class="project-description">Demo de Google Apps que simula un formulario de solicitud de equivalencias de materias. El formulario se guarda en Google Sheets, permite descargar un PDF y envía la solicitud y el PDF por correo. Hecho con React, JavaScript y Google Apps Script.</p>
+              <div class="project-tech">
+                <span class="tech-badge react">React</span>
+                <span class="tech-badge javascript">JavaScript</span>
+                <span class="tech-badge googleapps">Google Apps Script</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">2 semanas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 4 -->
+          <div class="project-card" data-category="game" data-tech="unity csharp">
+            <div class="project-image">
+              <img src="../../assets/images/GhostHunters.png" alt="Ghost Hunters" class="project-image">
+              <div class="placeholder-image">Ghost Hunters</div>
+              <div class="project-status progress">COMPLETADO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="#" class="action-btn primary">🎮 Descargar</a>
+                  <a href="https://github.com/marcela981/Videogame-v81?tab=readme-ov-file#ghost-hunters" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Ghost Hunters</h5>
+              <p class="project-description">Videojuego de disparos creado en Unity. Ambientación, diseño y niveles realizados en equipo. Consta de 3 niveles y 3 mapas diferentes. Los assets son libres. No tiene demo web, pero se puede descargar.</p>
+              <div class="project-tech">
+                <span class="tech-badge unity">Unity</span>
+                <span class="tech-badge csharp">C#</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">6 meses</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 5 -->
+          <div class="project-card" data-category="web" data-tech="react javascript">
+            <div class="project-image">
+              <img src="../../assets/images/Portafolio.png" alt="Portafolio 3D" class="project-image">
+              <div class="placeholder-image">Portafolio 3D</div>
+              <div class="project-status progress">EN DESARROLLO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://portafolio-2d.vercel.app" class="action-btn primary">📱 Ver App</a>
+                  <a href="https://github.com/marcela981/Portafolio-2D#" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Portafolio 3D</h5>
+              <p class="project-description">Portafolio personal en desarrollo, pensado para incluir elementos en Three.js. Desarrollado con React y JavaScript.</p>
+              <div class="project-tech">
+                <span class="tech-badge react">React</span>
+                <span class="tech-badge javascript">JavaScript</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2024</span>
+                <span class="project-duration">En desarrollo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 6 -->
+          <div class="project-card" data-category="web" data-tech="html css">
+            <div class="project-image">
+              <img src="../../assets/images/Policarpa.png" alt="Tributo" class="project-image">
+              <div class="placeholder-image">Pagina tributo</div>
+              <div class="project-status completed">COMPLETADO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://tribute-page-six-steel.vercel.app" class="action-btn primary">🛒 Ver Tienda</a>
+                  <a href="https://github.com/marcela981/Tribute-Page" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Tributo a Policarpa Salavarrieta</h5>
+              <p class="project-description">Página tributo simple dedicada a Policarpa Salavarrieta. Hecha con HTML y CSS, incluye cards y algunos elementos novedosos.</p>
+              <div class="project-tech">
+                <span class="tech-badge html">HTML</span>
+                <span class="tech-badge css">CSS</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 semana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 7 -->
+          <div class="project-card" data-category="web" data-tech="html css">
+            <div class="project-image">
+              <img src="../../assets/images/SimpleForm.png" alt="Formulario de Registro Musical" class="project-image">
+              <div class="placeholder-image">Fomulario simple</div>
+              <div class="project-status completed">COMPLETADO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://simple-form-tawny.vercel.app" class="action-btn primary">🛒 Ver Tienda</a>
+                  <a href="https://github.com/marcela981/SimpleForm" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Formulario de Registro Musical</h5>
+              <p class="project-description">Formulario simple que simula el registro de una aplicación de música tipo Spotify. Hecho con HTML y CSS, incluye efectos visuales como box-shadow para mayor atractivo.</p>
+              <div class="project-tech">
+                <span class="tech-badge html">HTML</span>
+                <span class="tech-badge css">CSS</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 semana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 8 -->
+          <div class="project-card" data-category="web" data-tech="html">
+            <div class="project-image">
+              <img src="../../assets/images/VikingBar.png" alt="Menú Bar Vikingo" class="project-image">
+              <div class="placeholder-image">Menú bar vikingo</div>
+              <div class="project-status completed">COMPLETADO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://restaurant-menu-viking.vercel.app" class="action-btn primary">🛒 Ver Tienda</a>
+                  <a href="https://github.com/marcela981/restaurant_menu-viking" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Menú Bar Vikingo</h5>
+              <p class="project-description">Menú sencillo de cervecería con 4 cervezas, estilos en pixel art y enlaces para cambiar de idioma. Hecho 100% en HTML, con estilos embebidos y enlaces a versión en inglés.</p>
+              <div class="project-tech">
+                <span class="tech-badge html">HTML</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 semana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 9 -->
+          <div class="project-card" data-category="python" data-tech="python">
+            <div class="project-image">
+              <img src="../../assets/images/Agente de reflejo simple.png" alt="Agente de Reflejo Simple" class="project-image">
+              <div class="placeholder-image">Agente de reflejo simple</div>
+              <div class="project-status completed">COMPLETADO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://github.com/marcela981/Agente_Reflejo_Simple" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Agente de Reflejo Simple</h5>
+              <p class="project-description">Simulación en Python de un ratón virtual que navega por un entorno en busca de queso, tomando decisiones predefinidas según sus percepciones. Todo por consola, selección de mapa y decisiones desde terminal.</p>
+              <div class="project-tech">
+                <span class="tech-badge python">Python</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 semana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 10 -->
+          <div class="project-card" data-category="game" data-tech="react javascript">
+            <div class="project-image">
+              <img src="../../assets/images/Twigtrail.png" alt="Twigtrail" class="project-image">
+              <div class="placeholder-image">Twigtrail</div>
+              <div class="project-status completed">INCOMPLETO</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://twigtrail.vercel.app" class="action-btn primary">🛒 Ver Tienda</a>
+                  <a href="https://github.com/marcela981/Twigtrail" class="action-btn secondary">💻 Código</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Twigtrail</h5>
+              <p class="project-description">Juego web no finalizado, realizado en React y Three.js. Permitía jugar tanto con teclado como con mandos de PS/Xbox u otros. El desarrollo no se completó, pero destaca la integración de controles físicos.</p>
+              <div class="project-tech">
+                <span class="tech-badge react">React</span>
+                <span class="tech-badge javascript">Three.js</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">6 meses</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel derecho - Proyecto destacado y herramientas -->
+    <section class="featured-panel">
+      <div class="panel-header">
+        <h3>⭐ PROYECTOS DESTACADOS</h3>
+      </div>
+      
+      <!-- Proyecto destacado 1 -->
+      <div class="featured-project">
+        <div class="featured-image">
+          <img src="../../assets/images/FSALUD.png" alt="Fdocumentos" class="project-image">
+          <div class="featured-placeholder">FDOCUMENTOS</div>
+        </div>
+        <div class="featured-content">
+          <h4>Fdocumentos Prácticas</h4>
+          <p>Sistema de carga de documentos para prácticas de medicina. Incluye dashboard de administrador y usuario, gestión de estudiantes, retroalimentaciones y estados de documentos. Base de datos en Google Sheets con API integrada.</p>
+          <div class="featured-stats">
+            <div class="feat-stat">
+              <span class="feat-label">Tecnologías:</span>
+              <span class="feat-value">React, JS, Google Apps</span>
+            </div>
+            <div class="feat-stat">
+              <span class="feat-label">Desarrollo:</span>
+              <span class="feat-value">100% Personal</span>
+            </div>
+            <div class="feat-stat">
+              <span class="feat-label">Estado:</span>
+              <span class="feat-value">Producción</span>
+            </div>
+          </div>
+          <a href="#" class="featured-btn">🚀 Proyecto Privado</a>
+        </div>
+      </div>
+
+      <!-- Proyecto destacado 2 -->
+      <div class="featured-project">
+        <div class="featured-image">
+          <img src="../../assets/images/SIAC.png" alt="SIAC" class="project-image">
+          <div class="featured-placeholder">GESTIÓN</div>
+        </div>
+        <div class="featured-content">
+          <h4>SIAC</h4>
+          <p>Sistema de gestión de procesos de programas de alta calidad para la universidad. Incluye dashboard de administrador y usuario, gestión de estudiantes, retroalimentaciones y estados de documentos. Base de datos en Google Sheets con API integrada.</p>
+          <div class="featured-stats">
+            <div class="feat-stat">
+              <span class="feat-label">Tecnologías:</span>
+              <span class="feat-value">React, JS, Google Apps</span>
+            </div>
+            <div class="feat-stat">
+              <span class="feat-label">Desarrollo:</span>
+              <span class="feat-value">100% Personal</span>
+            </div>
+            <div class="feat-stat">
+              <span class="feat-label">Estado:</span>
+              <span class="feat-value">Producción</span>
+            </div>
+          </div>
+          <a href="#" class="featured-btn">🚀 Proyecto Privado</a>
+        </div>
+      </div>
+
+      <!-- Herramientas de desarrollo -->
+      <div class="tools-section">
+        <h4>🛠️ HERRAMIENTAS</h4>
+        <div class="tools-grid">
+          <div class="tool-item">
+            <div class="tool-icon">💻</div>
+            <span>VS Code</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🐙</div>
+            <span>Git</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🐳</div>
+            <span>Docker</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🎨</div>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Próximos proyectos -->
+      <div class="upcoming-section">
+        <h4>🔮 PRÓXIMOS PROYECTOS</h4>
+        <div class="upcoming-list">
+          <div class="upcoming-item">
+            <div class="upcoming-status">📅</div>
+            <div class="upcoming-info">
+              <br><br>
+              <h6>Aplicativo de gestión de productos con función de voz e IA</h6>
+              <br>
+              <span>Q3 2025</span>
+              <br><br>
+            </div>
+          </div>
+          <div class="upcoming-item">
+            <div class="upcoming-status">🎯</div>
+            <div class="upcoming-info">
+              <h6>Travel planner con IA</h6>
+              <br>
+              <span>Q4 2025</span>
+              <br><br>
+            </div>
+          </div>
+          <div class="upcoming-item">
+            <div class="upcoming-status">🚀</div>
+            <div class="upcoming-info">
+              <h6>Mapa interactivo con IA</h6>
+              <br>
+              <span>Q1 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Navegación izquierda -->
+  <div class="nav-left">
+    <!-- Language switcher at top -->
+    <div class="nav-left-item language-switcher">
+      <a href="../proyects/projects.html" class="lang-link">EN</a>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../home/indexEs.html">HOME</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../about/sobre_mi.html">YO</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="#" class="active">PROY</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../contact/contacto.html">CTO</a></li>
+    </div>
+    <div class="nav-line"></div>
+    <div class="nav-left-item nav-copyrigth">
+      <div class="copyrigth">
+        <p>© 2025 Marcela Mazo Castro</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Filtrado de proyectos solo por tecnología
+    const projectCards = document.querySelectorAll('.project-card');
+    const techTags = document.querySelectorAll('.tech-tag');
+
+    // Filtrado por tecnología
+    techTags.forEach(tag => {
+      tag.addEventListener('click', () => {
+        tag.classList.toggle('active');
+        
+        const activeTechs = Array.from(document.querySelectorAll('.tech-tag.active'))
+          .map(t => t.dataset.tech);
+
+        projectCards.forEach(card => {
+          const cardTechs = card.dataset.tech.split(' ');
+          const hasActiveTech = activeTechs.length === 0 || 
+            activeTechs.some(tech => cardTechs.includes(tech));
+          
+          card.style.display = hasActiveTech ? 'block' : 'none';
+          
+          if (hasActiveTech) {
+            card.style.animation = 'fadeInUp 0.5s ease-out';
+          }
+        });
+      });
+    });
+
+    // Toggle de vista
+    const viewBtns = document.querySelectorAll('.view-btn');
+    const projectsGrid = document.getElementById('projectsGrid');
+
+    viewBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        viewBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const view = btn.dataset.view;
+        
+        if (view === 'list') {
+          projectsGrid.classList.add('list-view');
+        } else {
+          projectsGrid.classList.remove('list-view');
+        }
+      });
+    });
+
+    // Animaciones de hover para project cards
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-8px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+  </script>
+</body>
+</html> 

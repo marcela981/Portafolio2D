@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Projects</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="game-header">
+    <div class="header-controls">
+      <button class="back-btn" onclick="window.location.href='../home/indexEn.html'">← BACK</button>
+      <h1 class="page-title">Project Arsenal</h1>
+      <div class="level-indicator">10+ PROJ</div>
+    </div>
+  </header>
+
+  <main class="game-panel with-nav-left">
+    
+    <!-- Left panel - Filters and statistics -->
+    <section class="filters-panel">
+      <div class="panel-header">
+        <h3>🎯 MISSION FILTERS</h3>
+      </div>
+      
+      <div class="filters-container">
+        <div class="filter-group">
+          <h4>⚡ TECHNOLOGIES</h4>
+          <div class="tech-filters">
+            <span class="tech-tag" data-tech="typescript">TypeScript</span>
+            <span class="tech-tag" data-tech="react">React</span>
+            <span class="tech-tag" data-tech="javascript">JavaScript</span>
+            <span class="tech-tag" data-tech="python">Python</span>
+            <span class="tech-tag" data-tech="html">HTML</span>
+            <span class="tech-tag" data-tech="css">CSS</span>
+            <span class="tech-tag" data-tech="unity">Unity</span>
+            <span class="tech-tag" data-tech="googleapps">Google Apps</span>
+          </div>
+        </div>
+
+        <div class="stats-summary">
+          <h4>📊 STATISTICS</h4>
+          <div class="stat-item">
+            <span class="stat-label">Total Projects:</span>
+            <span class="stat-value">10+</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Completed:</span>
+            <span class="stat-value">12</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">In Development:</span>
+            <span class="stat-value">3</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Lines of Code:</span>
+            <span class="stat-value">50K+</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Central panel - Projects grid -->
+    <section class="projects-panel">
+      <div class="panel-header">
+        <h3>🚀 FEATURED PROJECTS</h3>
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="grid">🎮 Grid</button>
+          <button class="view-btn" data-view="list">📋 List</button>
+        </div>
+      </div>
+      
+      <div class="projects-container">
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Project 1 -->
+          <div class="project-card" data-category="web" data-tech="typescript css">
+            <div class="project-image">
+              <img src="../../assets/images/cafecito.png" alt="Cafecito" class="project-image">
+              <div class="placeholder-image">Cafecito</div>
+              <div class="project-status completed">COMPLETED</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://cafecito-five.vercel.app" class="action-btn primary">👁️ View Demo</a>
+                  <a href="https://github.com/marcela981/Cafecito" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Cafecito E-commerce</h5>
+              <p class="project-description">E-commerce for coffee bean sales. Includes main hero section, product catalog, shopping cart with checkout and dashboard for administrators. Developed in TypeScript, 100% frontend, no backend.</p>
+              <div class="project-tech">
+                <span class="tech-badge typescript">TypeScript</span>
+                <span class="tech-badge css">CSS</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 month</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="web" data-tech="react javascript">
+            <div class="project-image">
+              <img src="../../assets/images/VentyLab-Web.png" alt="VentyLab Web" class="project-image">
+              <div class="placeholder-image">VentyLab Web</div>
+              <div class="project-status completed">In Progress</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://ventilab-web.vercel.app" class="action-btn primary">👁️ View Demo</a>
+                  <a href="https://github.com/marcela981/ventilab-web" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">VentyLab Web</h5>
+              <p class="project-description">Respiratory ventilator monitor simulator with patient simulation, monitoring, graphs and connection. Parameters work with real calculations. Developed with React and JavaScript.</p>
+              <div class="project-tech">
+                <span class="tech-badge react">React</span>
+                <span class="tech-badge javascript">JavaScript</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 month</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-category="web" data-tech="react javascript googleapps">
+            <div class="project-image">
+              <img src="../../assets/images/EquivalenciasUnivalle.png" alt="Equivalencias Univalle" class="project-image">
+              <div class="placeholder-image">univalle equivalencies</div>
+              <div class="project-status completed">COMPLETED</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://equivalencias-univalle.vercel.app" class="action-btn primary">👁️ View Demo</a>
+                  <a href="https://github.com/marcela981/equivalencias-univalle" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Univalle Equivalencies</h5>
+              <p class="project-description">Google Apps demo that simulates a subject equivalency request form. The form is saved in Google Sheets, allows downloading a PDF and sends the request and PDF by email. Made with React, JavaScript and Google Apps Script.</p>
+              <div class="project-tech">
+                <span class="tech-badge react">React</span>
+                <span class="tech-badge javascript">JavaScript</span>
+                <span class="tech-badge googleapps">Google Apps Script</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">2 weeks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card" data-category="game" data-tech="unity csharp">
+            <div class="project-image">
+              <img src="../../assets/images/GhostHunters.png" alt="Ghost Hunters" class="project-image">
+              <div class="placeholder-image">Ghost Hunters</div>
+              <div class="project-status progress">COMPLETED</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="#" class="action-btn primary">🎮 Download</a>
+                  <a href="https://github.com/marcela981/Videogame-v81?tab=readme-ov-file#ghost-hunters" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Ghost Hunters</h5>
+              <p class="project-description">Shooting video game created in Unity. Environment, design and levels made as a team. It consists of 3 levels and 3 different maps. Assets are free. No web demo, but can be downloaded.</p>
+              <div class="project-tech">
+                <span class="tech-badge unity">Unity</span>
+                <span class="tech-badge csharp">C#</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">6 months</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-category="web" data-tech="react javascript">
+            <div class="project-image">
+              <img src="../../assets/images/Portafolio.png" alt="3D Portfolio" class="project-image">
+              <div class="placeholder-image">3D Portfolio</div>
+              <div class="project-status progress">IN DEVELOPMENT</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://portafolio-2d.vercel.app" class="action-btn primary">📱 View App</a>
+                  <a href="https://github.com/marcela981/Portafolio-2D#" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">3D Portfolio</h5>
+              <p class="project-description">Personal portfolio in development, designed to include Three.js elements. Developed with React and JavaScript.</p>
+              <div class="project-tech">
+                <span class="tech-badge react">React</span>
+                <span class="tech-badge javascript">JavaScript</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2024</span>
+                <span class="project-duration">In development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card" data-category="web" data-tech="html css">
+            <div class="project-image">
+              <img src="../../assets/images/Policarpa.png" alt="Tribute" class="project-image">
+              <div class="placeholder-image">Tribute page</div>
+              <div class="project-status completed">COMPLETED</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://tribute-page-six-steel.vercel.app" class="action-btn primary">🛒 View Page</a>
+                  <a href="https://github.com/marcela981/Tribute-Page" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Tribute to Policarpa Salavarrieta</h5>
+              <p class="project-description">Simple tribute page dedicated to Policarpa Salavarrieta. Made with HTML and CSS, includes cards and some novel elements.</p>
+              <div class="project-tech">
+                <span class="tech-badge html">HTML</span>
+                <span class="tech-badge css">CSS</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 week</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="project-card" data-category="web" data-tech="html css">
+            <div class="project-image">
+              <img src="../../assets/images/SimpleForm.png" alt="Music Registration Form" class="project-image">
+              <div class="placeholder-image">Simple form</div>
+              <div class="project-status completed">COMPLETED</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://simple-form-tawny.vercel.app" class="action-btn primary">📋 View Form</a>
+                  <a href="https://github.com/marcela981/SimpleForm" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Music Registration Form</h5>
+              <p class="project-description">Simple form that simulates registration for a Spotify-like music application. Made with HTML and CSS, includes visual effects like box-shadow for greater appeal.</p>
+              <div class="project-tech">
+                <span class="tech-badge html">HTML</span>
+                <span class="tech-badge css">CSS</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 week</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="project-card" data-category="web" data-tech="html">
+            <div class="project-image">
+              <img src="../../assets/images/VikingBar.png" alt="Viking Bar Menu" class="project-image">
+              <div class="placeholder-image">Viking bar menu</div>
+              <div class="project-status completed">COMPLETED</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://restaurant-menu-viking.vercel.app" class="action-btn primary">🍺 View Menu</a>
+                  <a href="https://github.com/marcela981/restaurant_menu-viking" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Viking Bar Menu</h5>
+              <p class="project-description">Simple brewery menu with 4 beers, pixel art styles and links to change language. Made 100% in HTML, with embedded styles and links to English version.</p>
+              <div class="project-tech">
+                <span class="tech-badge html">HTML</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 week</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div class="project-card" data-category="python" data-tech="python">
+            <div class="project-image">
+              <img src="../../assets/images/Agente de reflejo simple.png" alt="Simple Reflex Agent" class="project-image">
+              <div class="placeholder-image">Simple reflex agent</div>
+              <div class="project-status completed">COMPLETED</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://github.com/marcela981/Agente_Reflejo_Simple" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Simple Reflex Agent</h5>
+              <p class="project-description">Python simulation of a virtual mouse that navigates through an environment searching for cheese, making predefined decisions based on its perceptions. All through console, map selection and decisions from terminal.</p>
+              <div class="project-tech">
+                <span class="tech-badge python">Python</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">1 week</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 10 -->
+          <div class="project-card" data-category="game" data-tech="react javascript">
+            <div class="project-image">
+              <img src="../../assets/images/Twigtrail.png" alt="Twigtrail" class="project-image">
+              <div class="placeholder-image">Twigtrail</div>
+              <div class="project-status completed">INCOMPLETE</div>
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a href="https://twigtrail.vercel.app" class="action-btn primary">🎮 View Game</a>
+                  <a href="https://github.com/marcela981/Twigtrail" class="action-btn secondary">💻 Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5 class="project-title">Twigtrail</h5>
+              <p class="project-description">Unfinished web game, made in React and Three.js. It allowed playing with both keyboard and PS/Xbox or other controllers. Development was not completed, but integration of physical controls stands out.</p>
+              <div class="project-tech">
+                <span class="tech-badge react">React</span>
+                <span class="tech-badge javascript">Three.js</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-duration">6 months</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Right panel - Featured project and tools -->
+    <section class="featured-panel">
+      <div class="panel-header">
+        <h3>⭐ FEATURED PROJECTS</h3>
+      </div>
+      
+      <!-- Featured project 1 -->
+      <div class="featured-project">
+        <div class="featured-image">
+          <img src="../../assets/images/FSALUD.png" alt="Fdocuments" class="project-image">
+          <div class="featured-placeholder">FDOCUMENTS</div>
+        </div>
+        <div class="featured-content">
+          <h4>Fdocuments Practices</h4>
+          <p>Document upload system for medical practices. Includes administrator and user dashboard, student management, feedback and document status. Database in Google Sheets with integrated API.</p>
+          <div class="featured-stats">
+            <div class="feat-stat">
+              <span class="feat-label">Technologies:</span>
+              <span class="feat-value">React, JS, Google Apps</span>
+            </div>
+            <div class="feat-stat">
+              <span class="feat-label">Development:</span>
+              <span class="feat-value">100% Personal</span>
+            </div>
+            <div class="feat-stat">
+              <span class="feat-label">Status:</span>
+              <span class="feat-value">Production</span>
+            </div>
+          </div>
+          <a href="#" class="featured-btn">🚀 Private Project</a>
+        </div>
+      </div>
+
+      <!-- Featured project 2 -->
+      <div class="featured-project">
+        <div class="featured-image">
+          <img src="../../assets/images/SIAC.png" alt="SIAC" class="project-image">
+          <div class="featured-placeholder">MANAGEMENT</div>
+        </div>
+        <div class="featured-content">
+          <h4>SIAC</h4>
+          <p>Process management system for high quality programs for the university. Includes administrator and user dashboard, student management, feedback and document status. Database in Google Sheets with integrated API.</p>
+          <div class="featured-stats">
+            <div class="feat-stat">
+              <span class="feat-label">Technologies:</span>
+              <span class="feat-value">React, JS, Google Apps</span>
+            </div>
+            <div class="feat-stat">
+              <span class="feat-label">Development:</span>
+              <span class="feat-value">100% Personal</span>
+            </div>
+            <div class="feat-stat">
+              <span class="feat-label">Status:</span>
+              <span class="feat-value">Production</span>
+            </div>
+          </div>
+          <a href="#" class="featured-btn">🚀 Private Project</a>
+        </div>
+      </div>
+
+      <!-- Development tools -->
+      <div class="tools-section">
+        <h4>🛠️ TOOLS</h4>
+        <div class="tools-grid">
+          <div class="tool-item">
+            <div class="tool-icon">💻</div>
+            <span>VS Code</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🐙</div>
+            <span>Git</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🐳</div>
+            <span>Docker</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🎨</div>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upcoming projects -->
+      <div class="upcoming-section">
+        <h4>🔮 UPCOMING PROJECTS</h4>
+        <div class="upcoming-list">
+          <div class="upcoming-item">
+            <div class="upcoming-status">📅</div>
+            <div class="upcoming-info">
+              <h6>Product management app with voice function and AI</h6>
+              <span>Q3 2025</span>
+            </div>
+          </div>
+          <div class="upcoming-item">
+            <div class="upcoming-status">🎯</div>
+            <div class="upcoming-info">
+              <h6>Travel planner with AI</h6>
+              <span>Q4 2025</span>
+            </div>
+          </div>
+          <div class="upcoming-item">
+            <div class="upcoming-status">🚀</div>
+            <div class="upcoming-info">
+              <h6>Interactive map with AI</h6>
+              <span>Q1 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Left navigation -->
+  <div class="nav-left">
+    <!-- Language switcher at top -->
+    <div class="nav-left-item language-switcher">
+      <a href="../proyects/proyectos.html" class="lang-link">ES</a>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../home/indexEn.html">HOME</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../about/about_me.html">ME</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="#" class="active">PROJ</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../contact/contact.html">CTT</a></li>
+    </div>
+    <div class="nav-line"></div>
+    <div class="nav-left-item nav-copyrigth">
+      <div class="copyrigth">
+        <p>© 2025 Marcela Mazo Castro</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Project filtering by technology only
+    const projectCards = document.querySelectorAll('.project-card');
+    const techTags = document.querySelectorAll('.tech-tag');
+
+    // Technology filtering
+    techTags.forEach(tag => {
+      tag.addEventListener('click', () => {
+        tag.classList.toggle('active');
+        
+        const activeTags = document.querySelectorAll('.tech-tag.active');
+        const activeTechs = Array.from(activeTags).map(tag => tag.dataset.tech);
+        
+        projectCards.forEach(card => {
+          const cardTechs = card.dataset.tech.split(' ');
+          const hasMatchingTech = activeTechs.length === 0 || 
+                                 activeTechs.some(tech => cardTechs.includes(tech));
+          
+          if (hasMatchingTech) {
+            card.style.display = 'block';
+            setTimeout(() => card.style.opacity = '1', 10);
+          } else {
+            card.style.opacity = '0';
+            setTimeout(() => card.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+
+    // View toggle
+    const viewBtns = document.querySelectorAll('.view-btn');
+    const projectsGrid = document.getElementById('projectsGrid');
+
+    viewBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        viewBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        if (btn.dataset.view === 'list') {
+          projectsGrid.classList.add('list-view');
+        } else {
+          projectsGrid.classList.remove('list-view');
+        }
+      });
+    });
+
+    // Project card animations
+    projectCards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      
+      setTimeout(() => {
+        card.style.transition = 'all 0.6s ease';
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, index * 100);
+    });
+  </script>
+</body>
+</html> 

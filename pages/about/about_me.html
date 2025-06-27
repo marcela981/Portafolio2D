@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - About me</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="game-header">
+    <div class="header-controls">
+      <button class="back-btn" onclick="window.location.href='../home/indexEn.html'">← BACK</button>
+      <h1 class="page-title">Marcela Mazo Castro</h1>
+      <div class="level-indicator">LVL 24</div>
+    </div>
+  </header>
+
+  <main class="game-panel with-nav-left">
+    
+    <!-- Left panel - Character information -->
+    <section class="character-info">
+      <div class="character-card">
+        <div class="avatar-container">
+          <div class="avatar-frame">
+            <img src="../../assets/images/avatar.png" alt="Marcela Avatar" class="character-avatar">
+            <div class="avatar-border"></div>
+          </div>
+          <div class="status-indicators">
+            <div class="health-bar">
+              <div class="bar-label">HP</div>
+              <div class="bar-fill hp-fill"></div>
+            </div>
+            <div class="mana-bar">
+              <div class="bar-label">MP</div>
+              <div class="bar-fill mp-fill"></div>
+            </div>
+            <div class="exp-bar">
+              <div class="bar-label">EXP</div>
+              <div class="bar-fill exp-fill"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="character-details">
+          <h2 class="character-name">MARCELA MAZO CASTRO</h2>
+          <p class="character-class">Frontend Developer / Future Product Manager</p>
+          <p class="character-location">📍Cali, Colombia</p>
+          
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-label">AGE:</span>
+              <span class="stat-value">24</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">EXP:</span>
+              <span class="stat-value">3 years</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">PROJECTS:</span>
+              <span class="stat-value">10+</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">RANK:</span>
+              <span class="stat-value">JUNIOR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Central panel - Skills tree -->
+    <section class="skills-panel">
+      <div class="panel-header">
+        <h3>🗂️ PROFILE & SKILLS</h3>
+        <div class="skill-points">POINTS: 85/100</div>
+      </div>
+      
+      <!-- Profile description -->
+      <div class="profile-description">
+        <h4 class="profile-title">📋 CHARACTER DESCRIPTION</h4>
+        <p class="profile-text">
+          I'm a frontend developer with a strong orientation towards product and user experience. 
+          With 3 years of experience, I specialize in creating interfaces that not only look good, but 
+          solve real user problems. My journey began at Universidad del Valle, where 
+          I discovered my passion for the intersection between technology, design and product strategy. 
+          I currently work developing frontend applications for healthcare professionals, always 
+          thinking about how technology can improve the end user experience. My future 
+          goals focus on two paths: deepening as a specialized Frontend Developer or evolving 
+          towards Product Management, combining my technical experience with strategic product vision.
+        </p>
+      </div>
+      
+      <!-- Container with scroll for skills -->
+      <div class="skills-container">
+        <!-- Technical Skills -->
+      <div class="skill-category">
+        <h4 class="category-title">💻 FRONTEND & PRODUCT SKILLS</h4>
+        <div class="skills-grid modern">
+          <div class="skill-card" data-level="8">
+            <div class="skill-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-logo">
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <h5 class="skill-title">HTML</h5>
+            <span class="skill-experience">3 years</span>
+          </div>
+          
+          <div class="skill-card" data-level="8">
+            <div class="skill-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-logo">
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <h5 class="skill-title">CSS</h5>
+            <span class="skill-experience">3 years</span>
+          </div>
+          
+          <div class="skill-card" data-level="7">
+            <div class="skill-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-logo">
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+            <h5 class="skill-title">JavaScript</h5>
+            <span class="skill-experience">2.5 years</span>
+          </div>
+          
+          <div class="skill-card" data-level="6">
+            <div class="skill-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-logo">
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+            <h5 class="skill-title">React</h5>
+            <span class="skill-experience">2 years</span>
+          </div>
+          
+          <div class="skill-card" data-level="6">
+            <div class="skill-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="UX/UI" class="skill-logo">
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 55%"></div>
+              </div>
+            </div>
+            <h5 class="skill-title">UX/UI Design</h5>
+            <span class="skill-experience">2 years</span>
+          </div>
+          
+          <div class="skill-card" data-level="5">
+            <div class="skill-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Analytics" class="skill-logo">
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 45%"></div>
+              </div>
+            </div>
+            <h5 class="skill-title">Product Analytics</h5>
+            <span class="skill-experience">1 year</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-category">
+        <h4 class="category-title">🌟 PRODUCT & LEADERSHIP SKILLS</h4>
+        <div class="soft-skills-grid">
+          <div class="soft-skill-item" data-strength="95">
+            <div class="soft-icon">👥</div>
+            <div class="soft-content">
+              <h6>Teamwork</h6>
+              <div class="soft-progress">
+                <div class="soft-bar" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="soft-skill-item" data-strength="90">
+            <div class="soft-icon">🧩</div>
+            <div class="soft-content">
+              <h6>Problem Solving</h6>
+              <div class="soft-progress">
+                <div class="soft-bar" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="soft-skill-item" data-strength="85">
+            <div class="soft-icon">💬</div>
+            <div class="soft-content">
+              <h6>Communication</h6>
+              <div class="soft-progress">
+                <div class="soft-bar" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="soft-skill-item" data-strength="88">
+            <div class="soft-icon">📚</div>
+            <div class="soft-content">
+              <h6>Continuous Learning</h6>
+              <div class="soft-progress">
+                <div class="soft-bar" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="soft-skill-item" data-strength="85">
+            <div class="soft-icon">🎯</div>
+            <div class="soft-content">
+              <h6>Product Vision</h6>
+              <div class="soft-progress">
+                <div class="soft-bar" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="soft-skill-item" data-strength="80">
+            <div class="soft-icon">👤</div>
+            <div class="soft-content">
+              <h6>User-Centered Thinking</h6>
+              <div class="soft-progress">
+                <div class="soft-bar" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="soft-skill-item" data-strength="75">
+            <div class="soft-icon">📊</div>
+            <div class="soft-content">
+              <h6>Data Analysis</h6>
+              <div class="soft-progress">
+                <div class="soft-bar" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Right panel - Achievements and missions -->
+    <section class="achievements-panel">
+      <div class="panel-header">
+        <h3>🏆 UNLOCKED ACHIEVEMENTS</h3>
+      </div>
+      
+      <!-- Container with scroll for achievements -->
+      <div class="achievements-container">
+        <div class="achievements-list modern">
+        <div class="achievement-card completed">
+          <div class="achievement-header">
+            <div class="achievement-icon">💼</div>
+            <div class="achievement-status">COMPLETED</div>
+          </div>
+          <div class="achievement-content">
+            <h5 class="achievement-title">First Professional Experience</h5>
+            <p class="achievement-description">Junior Analyst - 2023</p>
+            <div class="achievement-date">2023</div>
+          </div>
+        </div>
+        
+        <div class="achievement-card completed">
+          <div class="achievement-header">
+            <div class="achievement-icon">🚀</div>
+            <div class="achievement-status">COMPLETED</div>
+          </div>
+          <div class="achievement-content">
+            <h5 class="achievement-title">Full-Stack Developer</h5>
+            <p class="achievement-description">First job as Full-Stack Developer</p>
+            <div class="achievement-date">2025</div>
+          </div>
+        </div>
+        
+        <div class="achievement-card in-progress">
+          <div class="achievement-header">
+            <div class="achievement-icon">🎓</div>
+            <div class="achievement-status">IN PROGRESS</div>
+          </div>
+          <div class="achievement-content">
+            <h5 class="achievement-title">University Graduation</h5>
+            <p class="achievement-description">Systems Engineering - Universidad del Valle</p>
+            <div class="achievement-progress">
+              <div class="progress-line">
+                <div class="progress-fill" style="width: 85%"></div>
+              </div>
+              <span class="progress-text">85%</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-card in-progress">
+          <div class="achievement-header">
+            <div class="achievement-icon">⏳</div>
+            <div class="achievement-status">IN PROGRESS</div>
+          </div>
+          <div class="achievement-content">
+            <h5 class="achievement-title">Consolidated Junior Developer</h5>
+            <p class="achievement-description">Perfecting skills as junior developer</p>
+            <div class="achievement-progress">
+              <div class="progress-line">
+                <div class="progress-fill" style="width: 65%"></div>
+              </div>
+              <span class="progress-text">65%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Mini map of visited locations -->
+      <div class="mini-map modern">
+        <h4 class="map-title">🗺️ PROFESSIONAL TRAJECTORY</h4>
+        <div class="map-locations">
+          <div class="location-card visited">
+            <div class="location-icon">🏫</div>
+            <div class="location-info">
+              <h6>University</h6>
+              <span>In progress</span>
+            </div>
+          </div>
+          <div class="location-card visited">
+            <div class="location-icon">💼</div>
+            <div class="location-info">
+              <h6>Junior Analyst</h6>
+              <span>Completed - 2023</span>
+            </div>
+          </div>
+          <div class="location-card visited">
+            <div class="location-icon">🚀</div>
+            <div class="location-info">
+              <h6>Full-Stack Developer</h6>
+              <span>Active - 2025</span>
+            </div>
+          </div>
+          <div class="location-card unexplored">
+            <div class="location-icon">🎨</div>
+            <div class="location-info">
+              <h6>Senior Frontend Developer</h6>
+              <span>Future option</span>
+            </div>
+          </div>
+          <div class="location-card unexplored">
+            <div class="location-icon">🎯</div>
+            <div class="location-info">
+              <h6>Product Manager</h6>
+              <span>Future option</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Left navigation -->
+  <div class="nav-left">
+    <!-- Language switcher at top -->
+    <div class="nav-left-item language-switcher">
+      <a href="../about/sobre_mi.html" class="lang-link">ES</a>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../home/indexEn.html">HOME</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="#" class="active">ME</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../proyects/projects.html">PROJ</a></li>
+    </div>
+    <div class="nav-left-item">
+      <li><a href="../contact/contact.html">CTT</a></li>
+    </div>
+    <div class="nav-line"></div>
+    <div class="nav-left-item nav-copyrigth">
+      <div class="copyrigth">
+        <p>© 2025 Marcela Mazo Castro</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="image-container"></div>
+    <h1>Portfolio</h1>
+  </header>
+  <main>
+    <div class="container">
+        <div class="nav-left">
+            <!-- Language switcher -->
+            <div class="nav-left-item language-switcher">
+                <a href="indexEs.html" class="lang-link">ES</a>
+            </div>
+            <div class="nav-left-item">
+                <li><a href="#">LIN</a></li>
+            </div>
+            <div class="nav-left-item">
+                <li><a href="#">GIT</a></li>
+            </div>
+            <div class="nav-left-item">
+                <li><a href="#">CV</a></li>
+            </div>
+            <div class="nav-line"></div>
+            <div class="nav-left-item nav-copyrigth">
+                <div class="copyrigth">
+                    <p>© 2025 Marcela Mazo Castro</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper w-clearfix">
+            <div class="section-left">
+                <div class="content content-main">
+                    <div class="header mask">
+                        <h1 class="header swipe up">Marcela Mazo Castro</h1>
+                    </div>
+                    <div class="description-mask">
+                        <p class="description">
+                            Frontend Developer / Future Product Manager
+                            <br>
+                        </p>
+                    </div>
+                    <div class="description-mask">
+                        <p class="description">
+                            I currently work part-time as a frontend developer creating applications
+                            for healthcare professionals at <a href="https://www.univalle.edu.co/" target="_blank">Universidad del Valle</a>.
+                            My focus is on creating exceptional user experiences and my future points towards 
+                            specialized frontend development or product management.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-right">
+                <div class="nav">
+                    <div class="nav-item">
+                        <a href="../proyects/projects.html" class="nav-link">Projects</a>
+                        <div class="nav-underline"></div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../about/about_me.html" class="nav-link">About me</a>
+                        <div class="nav-underline"></div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../contact/contact.html" class="nav-link">Contact</a>
+                        <div class="nav-underline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </main>
+  <footer>
+  </footer>
+  
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const parallaxElement = document.querySelector('.image-container');
+      const titleElement = document.querySelector('header h1');
+      const speed = 0.5; // Parallax speed
+      
+      // Parallax effect for background image
+      parallaxElement.style.transform = `translateY(${scrolled * speed}px)`;
+      
+      // Title effect that rises from bottom
+      const windowHeight = window.innerHeight;
+      const scrollThreshold = windowHeight * 0.3; // Starts appearing when scrolling 30% of screen
+      const maxScroll = windowHeight * 0.8; // Reaches top when scrolling 80% of screen
+      
+      if (scrolled > scrollThreshold) {
+        // Make title visible
+        titleElement.style.opacity = '1';
+        
+        // Calculate title position based on scroll
+        const scrollProgress = Math.min((scrolled - scrollThreshold) / (maxScroll - scrollThreshold), 1);
+        const titleTop = windowHeight - (scrollProgress * (windowHeight - 20)); // From bottom (100vh) to top (20px)
+        
+        titleElement.style.top = `${titleTop}px`;
+        
+        // Once it reaches the top, keep it fixed
+        if (scrolled >= maxScroll) {
+          titleElement.style.top = '20px';
+        }
+      } else {
+        // Hide title when no scroll
+        titleElement.style.opacity = '0';
+        titleElement.style.top = '100vh';
+      }
+    });
+  </script>
+</body>
+</html> 
