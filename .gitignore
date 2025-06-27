@@ -22,3 +22,4 @@ node_modules/
 # Archivos de respaldo
 *.bak
 *.backup 
+.vercel
